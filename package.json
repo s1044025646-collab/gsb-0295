@@ -1,0 +1,23 @@
+{
+  "name": "teaching-assembler",
+  "version": "1.0.0",
+  "description": "双遍汇编与符号相对地址核验后端",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/*.js",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/cli.js assemble demo/loop.asm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "5.9"
+  }
+}
