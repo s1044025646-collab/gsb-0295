@@ -1,0 +1,18 @@
+{
+  "name": "edu-asm-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "双遍汇编与符号相对地址核验后端（教学指令集，仅 API 与 CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "test": "npm run build && node --test \"dist-test/tests/*.test.js\"",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js assemble demo/loop.asm --out=demo/loop.bin"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
